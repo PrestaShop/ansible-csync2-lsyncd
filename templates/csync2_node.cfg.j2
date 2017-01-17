@@ -1,4 +1,5 @@
 nossl * *;
+lock-timeout 60;
 group {{ inventory_hostname }}
 {
   {% for host in groups['front'] -%}
