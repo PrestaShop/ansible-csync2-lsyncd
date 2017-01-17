@@ -1,4 +1,5 @@
 nossl * *;
+lock-timeout 60;
 group web
 {
   {% for host in groups['front'] -%}
